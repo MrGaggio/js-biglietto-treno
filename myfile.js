@@ -16,14 +16,15 @@ let ticketPriceOver65 = userDistance * 0.126;
 
 if (userAge <= 18) {
     ticketPrice = ticketPriceUnder18
-    console.log(ticketPriceUnder18);
+    console.log("Il prezzo totale del biglietto è pari a € " + ticketPriceUnder18);
 } else if ( userAge >= 65 ) {
     ticketPrice = ticketPriceOver65
-    console.log(ticketPriceOver65);
-} else console.log( ticketPrice);
+    console.log("Il prezzo totale del biglietto è pari a € " + ticketPriceOver65);
+} else console.log("Il prezzo totale del biglietto è pari a € " + ticketPrice);
     
-// Il prezzo totale deve essere espresso con mazzimo 2 decimli
+// Il prezzo totale deve essere espresso con mazzimo 2 decimali
+
+document.getElementById ("prezzo").innerHTML = "Il prezzo totale del biglietto è pari a € " + ticketPrice;
 
 
-const totalPrice = ticketPrice, ticketPriceUnder18, ticketPriceOver65
- 
+
