@@ -20,6 +20,10 @@ if (userAge <= 18) {
 } else if ( userAge >= 65 ) {
     ticketPrice = ticketPriceOver65
     console.log(ticketPriceOver65);
-}
+} else console.log( ticketPrice);
     
 // Il prezzo totale deve essere espresso con mazzimo 2 decimli
+
+
+const totalPrice = ticketPrice, ticketPriceUnder18, ticketPriceOver65
+ 
